@@ -1,14 +1,15 @@
 <template>
   <section class="container">
     <div>
-      <app-logo/>
-      <h1 class="title">
-        my-site
-      </h1>
+      <!-- <app-logo/> -->
+      <img class="matt-head" src="../assets/matt-head.jpg" aria-hidden="true" />
+      <h1 class="title">Matt-Seifert.com is: </h1>
       <h2 class="subtitle">
-        Nuxt.js project
+        <vue-typed-js :strings="['Being worked on', 'Procrastinating', 'Coming soon...']" :typeSpeed="100">
+          <span class="typing"></span>
+        </vue-typed-js>
       </h2>
-      <div class="links">
+      <!-- <div class="links">
         <a
           href="https://nuxtjs.org/"
           target="_blank"
@@ -17,7 +18,7 @@
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           class="button--grey">GitHub</a>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
@@ -39,6 +40,8 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: linear-gradient(to bottom, #008CDC, #E3FFFE);
+  background-attachment: fixed;
 }
 
 .title {
@@ -60,6 +63,10 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+.matt-head{
+  height: 300px;
 }
 </style>
 
